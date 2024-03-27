@@ -26,7 +26,7 @@ export default function Main() {
     /** Start(Stop) 버튼 클릭 시 실행된다. */
     const onClickStart = () => {
         setEyeTrackingMode((prev) => !prev);
-        setLoading(true);
+        setLoading((prev) => !prev);
     };
 
     /**사용자의 시선이 특정 영역에 처음으로 진입한 시간*/
